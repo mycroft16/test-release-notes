@@ -1,0 +1,28 @@
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+categories:
+  - title: 'Added'
+    labels:
+      - 'added'
+  - title: 'Changed'
+    labels:
+      - 'changed'
+  - title: 'Bug Fixes'
+    labels:
+      - 'fixed'
+  - title: 'Removed'
+    labels:
+      - 'removed'
+  - title: 'Deprecated'
+    labels:
+      - 'deprecated'
+exclude-labels:
+  - 'skip-changelog'
+change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
+template: |
+  ## What’s Changed
+
+  $CHANGES
+
+  ### Contributors
+  $CONTRIBUTORS
